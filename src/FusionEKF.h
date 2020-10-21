@@ -8,6 +8,7 @@
 #include "kalman_filter.h"
 #include "measurement_package.h"
 #include "tools.h"
+#include <math.h>
 
 class FusionEKF {
  public:
@@ -34,6 +35,7 @@ class FusionEKF {
  private:
   // check whether the tracking toolbox was initialized or not (first measurement)
   bool is_initialized_;
+  
 
   // previous timestamp
   long long previous_timestamp_;
